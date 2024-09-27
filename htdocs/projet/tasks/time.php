@@ -1267,6 +1267,7 @@ if (($id > 0 || !empty($ref)) || $projectidforalltimes > 0 || $allprojectforuser
 		print $formconfirm;
 
 		// Definition of fields for list
+		if(getDolGlobalInt('FORCE_BILL_TIME_FIELDS')) $projectstatic->usage_bill_time=1; // Add the ability to list already billed times.
 		$arrayfields = array();
 		$arrayfields['t.element_date'] = array('label' => $langs->trans("Date"), 'checked' => 1);
 		$arrayfields['p.fk_soc'] = array('label' => $langs->trans("ThirdParty"), 'type' => 'integer:Societe:/societe/class/societe.class.php:1','checked' => 1);
