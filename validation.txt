@@ -17,6 +17,17 @@ PHP_CodeSniffer passes on all three modified files on each branch.
 These use the local test bootstrap; they are not full installation/migration
 tests of those versions.
 
+Complete local FormTest suite (without the testLoadTva filter):
+20.0 and 23.0: OK (35 tests, 179 assertions).
+develop: OK (49 tests, 279 assertions), including its existing form tests.
+
+GitHub Actions at code commit 73bb2aad092fb34bc3823b70aea06c8284c0f326:
+pre-commit, PHPStan and Phan: success.
+https://github.com/Dolibarr/dolibarr/actions/runs/37274516539
+File, title/description and contributor quota checks: success.
+Travis build 278932104: job created but not started at the time of this report.
+Its additional functional validation is therefore still pending.
+
 Coverage: omitted type, integer 0, numeric string zero, sales, purchases;
 all three key modes and both options-only/full-select rendering;
 same-rate VAT code selection; shared NPR numeric selection;
