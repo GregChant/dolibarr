@@ -10,6 +10,13 @@ Command: php8.4 /usr/bin/phpunit --filter testLoadTva test/phpunit/FormTest.php
 Before: Tests: 34, Assertions: 103, Failures: 19.
 After: OK (34 tests, 177 assertions).
 
+Forward-port selector validation in separate local worktrees:
+23.0 (fee7d273): OK (34 tests, 177 assertions).
+develop (f6b89a8e): OK (34 tests, 177 assertions).
+PHP_CodeSniffer passes on all three modified files on each branch.
+These use the local test bootstrap; they are not full installation/migration
+tests of those versions.
+
 Coverage: omitted type, integer 0, numeric string zero, sales, purchases;
 all three key modes and both options-only/full-select rendering;
 same-rate VAT code selection; shared NPR numeric selection;
