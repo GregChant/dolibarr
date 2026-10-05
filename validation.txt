@@ -25,8 +25,13 @@ GitHub Actions at code commit 73bb2aad092fb34bc3823b70aea06c8284c0f326:
 pre-commit, PHPStan and Phan: success.
 https://github.com/Dolibarr/dolibarr/actions/runs/37274516539
 File, title/description and contributor quota checks: success.
-Travis build 278932104: job created but not started at the time of this report.
-Its additional functional validation is therefore still pending.
+Travis build 278932104: passed under PHP 8.2 / PHPUnit 8.5.56.
+OK (2902 tests, 102919 assertions). PHPUnit return code = 0.
+https://app.travis-ci.com/github/Dolibarr/dolibarr/builds/278932104
+
+The earlier Actions run 37274379394, on superseded commit 5f690b2b, was
+canceled when the updated commits replaced it. Its Phan log reports
+"The operation was canceled." The current run 37274516539 is successful.
 
 Coverage: omitted type, integer 0, numeric string zero, sales, purchases;
 all three key modes and both options-only/full-select rendering;
